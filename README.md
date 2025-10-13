@@ -18,13 +18,17 @@ layout:
 
 # Developer Platform
 
-<h2 align="center">Welcome to Abstract Names</h2>
+<h2 align="center">Welcome to <img src=".gitbook/assets/dotans-tiny.png" alt=""></h2>
 
 <p align="center">Learn more about Abstract Names or how to integrate .abs names in your project.</p>
 
 <p align="center"><a href="https://abstractnames.xyz/" class="button primary">Join the waitlist</a> <a href="https://x.com/abstractnamesX" class="button secondary">Follow on X</a></p>
 
 <table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h4><i class="fa-book">:book:</i></h4></td><td><strong>Learn about .abs names</strong></td><td>Discover what Abstract Names are, how to get one and how they work.</td><td><a href="https://app.gitbook.com/o/1lxjAgozqBuPDv56Tqgl/s/6coB22TaqfbUfxw7JAUV/">Documentation</a></td><td><a href=".gitbook/assets/docs.png">docs.png</a></td></tr><tr><td><h4><i class="fa-square-code">:square-code:</i></h4></td><td><strong>Builder toolkit</strong></td><td>Get started with the developer toolkit in less then 5 minutes.</td><td><a href="https://app.gitbook.com/o/1lxjAgozqBuPDv56Tqgl/s/6coB22TaqfbUfxw7JAUV/">Documentation</a></td><td><a href=".gitbook/assets/code.png">code.png</a></td></tr><tr><td><h4><i class="fa-clock-rotate-left">:clock-rotate-left:</i></h4></td><td><strong>Changelog</strong></td><td>Keep track of changes and updates.</td><td><a href="https://app.gitbook.com/o/1lxjAgozqBuPDv56Tqgl/s/vGjTHdfhEuWoCvkQllLP/">Changelog</a></td><td><a href=".gitbook/assets/changelog.png">changelog.png</a></td></tr></tbody></table>
+
+
+
+
 
 {% columns %}
 {% column %}
@@ -39,6 +43,10 @@ Read guides, watch tutorials, and learn more about Abstract Names as the identit
 <figure><img src=".gitbook/assets/names.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
+
+
+
+
 
 {% columns %}
 {% column %}
@@ -71,6 +79,10 @@ No guesswork, no complexity—just your first successful call, fast.
 {% endcolumns %}
 
 <h2 align="center">Join a community of over 3,000 users</h2>
+
+
+
+
 
 <p align="center">Join our Discord community or create your first PR in just a few steps.</p>
 
