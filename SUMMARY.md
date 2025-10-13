@@ -11,9 +11,10 @@
 
 ## Build
 
-* [React](build/react.md)
 * [Solidity](build/solidity.md)
 * [API](build/api.md)
+* [React](build/react.md)
+* [useResolve](build/useresolve.md)
 
 ## Smart Contracts
 
