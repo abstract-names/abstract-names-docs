@@ -11,10 +11,17 @@
 
 ## Build
 
+* [Getting Started](build/getting-started.md)
+* [Hooks](build/hooks/README.md)
+  * [useResolve](build/hooks/useresolve.md)
+  * [useReverseResolve](build/hooks/usereverseresolve.md)
+  * [useProfile](build/hooks/useprofile.md)
+  * [useTextRecord](build/hooks/usetextrecord.md)
+  * [useAllowedTextKeys](build/hooks/useallowedtextkeys.md)
+  * [useNameExpiry](build/hooks/usenameexpiry.md)
+  * [useNameAvailability](build/hooks/usenameavailability.md)
 * [Solidity](build/solidity.md)
 * [API](build/api.md)
-* [React](build/react.md)
-* [useResolve](build/useresolve.md)
 
 ## Smart Contracts
 
