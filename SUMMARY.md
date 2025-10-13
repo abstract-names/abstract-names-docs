@@ -26,6 +26,6 @@
 
 ## Other
 
+* [Terminology](other/terminology.md)
 * [Grants Program](other/grants-program.md)
 * [FAQ](other/faq.md)
-* [Terminology](other/terminology.md)
