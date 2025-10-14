@@ -1,7 +1,7 @@
 ---
 description: >-
-  Resolution is how Abstract Names connects your readable name — like alice.abs
-  — to what it represents on-chain: your Abstract Global Wallet, identity, or
+  Resolution is how Abstract Names connects your readable name, like alice.abs,
+  to what it represents on-chain: your Abstract Global Wallet, identity, or
   content.
 ---
 
@@ -13,7 +13,9 @@ Resolution is how a name answers the question “where should this point?” By 
 
 Reverse resolution does the opposite: it lets apps display a name when they only have an address. By setting your name as your primary, supported apps can show “yourname.abs” instead of the address, which makes it easier for people to recognize you.
 
-Expired names do not resolve.
+{% hint style="info" %}
+Expired names do not resolve after grace period ends.
+{% endhint %}
 
 ### Profiles
 

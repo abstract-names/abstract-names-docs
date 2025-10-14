@@ -1,3 +1,7 @@
+---
+description: Discover the hooks available in the abstract-names-SDK package.
+---
+
 # Hooks
 
 ### Available Hooks

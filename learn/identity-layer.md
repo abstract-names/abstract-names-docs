@@ -8,16 +8,19 @@ description: >-
 
 ### What is Abstract Names?
 
-Abstract Names turns wallet addresses into readable names you can recognize at a glance. The naming system is built from a few parts that each do a specific job. Most of the time you’ll interact with the Manager App, which provides a simple interface to search, mint, and manage your name.
+Abstract Names turns wallet addresses into readable names and on-chain identities that you can recognize at a glance. The naming system is built from a few parts that each do a specific job. Most of the time you’ll interact with the Manager App, which provides a simple interface to search, mint, and manage your name.
 
 ### Core modules
 
-| Module     | What it does                                                          |
-| ---------- | --------------------------------------------------------------------- |
-| Registry   | Stores names as NFTs with their length tier and expiration date.      |
-| Controller | Handles pricing, sale phases, renewals, and reserved names.           |
-| Resolver   | Answers where a name points: an address, profile records, or content. |
-| Validator  | Ensures names use allowed characters and the right length.            |
+A modular [architecture](../smart-contracts/architecture.md) with 5 core modules.
+
+| Module                                         | What it does                                                          |
+| ---------------------------------------------- | --------------------------------------------------------------------- |
+| [Registry](../smart-contracts/registry.md)     | Stores names as NFTs with their length tier and expiration date.      |
+| [Controller](../smart-contracts/controller.md) | Handles pricing, sale phases, renewals, and reserved names.           |
+| [Resolver](../smart-contracts/resolver.md)     | Answers where a name points: an address, profile records, or content. |
+| [Validator](../smart-contracts/validator.md)   | Ensures names use allowed characters and the right length.            |
+| [Renderer](../smart-contracts/renderer.md)     | Renders a visual appealing NFT with the bound name displayed on it.   |
 
 ### Minting
 

@@ -14,7 +14,7 @@ Your global wallet is the anchor for your on‑chain identity. It holds your ass
 
 ### Getting started
 
-Getting started is simple: create or connect a wallet using the Abstract onboarding flow, which establishes your global identity. Once you’re set up, you can claim an Abstract Name and decide what it should point to—your receiving address, a profile, or a piece of content.
+Getting started is simple: create or connect a wallet using the Abstract onboarding flow, which establishes your global identity. Once you’re set up, you can claim an Abstract Name and decide what it should point to... your receiving address, a profile, or a piece of content.
 
 Using a name makes interactions clearer. Friends and apps can find you by name, and with reverse resolution your address can display as your chosen name in supported interfaces. Profiles add context with text records like a website or social handle, helping others confirm they’re looking at the right account.
 

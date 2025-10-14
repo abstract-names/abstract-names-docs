@@ -16,4 +16,4 @@ description: >-
 | Validator  | `TBA`   | `TBA`   |
 | Renderer   | `TBA`   | `TBA`   |
 
-You can look up deployments on ABScan at https://abscan.xyz. Use the network selector in the explorer to switch between chains and verify contract addresses.
+You can look up deployments on [Abscan](https://abscan.xyz/). Use the network selector in the explorer to switch between chains and verify contract addresses.

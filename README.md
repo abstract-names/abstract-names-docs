@@ -25,9 +25,9 @@ layout:
 
 Welcome to Abstract Names. A naming service for your Abstract Global Wallet.
 
-Abstract Names helps people use the blockchain without juggling long hexadecimal strings. Instead of sending to an address, you can send value to a name. A name can also power a profile—linking an avatar, website, or social handle—and even point to content stored on networks like IPFS. Names are NFTs with an expiration date, so you can renew them over time and transfer them just like any ERC‑721 token.
+Abstract Names helps people use the blockchain without juggling long hexadecimal strings. Instead of sending to an address, you can send value to a name. A name can also power a profile. Linking an avatar, website, or social handle and even point to content stored on networks like IPFS. Names are NFTs with an expiration date, so you can renew them over time and transfer them just like any ERC‑721 token.
 
-Under the hood, the system is modular. A Registry mints and stores names as NFTs, a Controller manages pricing and sale phases, a Resolver answers “who and what does this name point to?”, and a Validator ensures names are well‑formed and safe.
+Under the hood, the [architecture](smart-contracts/architecture.md) is modular. A Registry mints and stores names as NFTs, a Controller manages pricing and sale phases, a Resolver answers “who and what does this name point to?”, and a Validator ensures names are well‑formed and safe.
 
 ### Jump right in
 
