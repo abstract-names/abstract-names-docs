@@ -61,3 +61,11 @@ Set a primary name (small fee) to map address → name.abs. Apps can display you
 See Deployments for addresses and ABScan links once available.
 
 </details>
+
+<details>
+
+<summary><strong>How to get support?</strong></summary>
+
+You can open a ticket in our [Discord](https://discord.gg/4RSAe9GVJU) to receive answers.
+
+</details>
