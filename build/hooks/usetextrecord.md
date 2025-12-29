@@ -24,7 +24,7 @@ export default function Example() {
   });
 
   if (isLoading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error.message}</div>;
+  if (error) return <div>Error: {error.userMessage}</div>;
   if (!avatar) return <div>No avatar set</div>;
 
   return <img src={avatar} alt="Avatar" />;
@@ -82,7 +82,8 @@ Returns a `UseTextRecordResult` object.
 interface UseTextRecordResult {
   data: string | undefined;
   isLoading: boolean;
-  error: Error | null;
+  error: AbstractNamesError | null;
+  rawError: Error | null;
   refetch: () => void;
 }
 ```
@@ -105,9 +106,15 @@ The text record value. Returns `undefined` if the key is not set, the name doesn
 
 ***
 
-<mark style="color:$success;">**error**</mark> `Error | null`
+<mark style="color:$success;">**error**</mark> `AbstractNamesError | null`
 
-The error object if the query failed, otherwise `null`.
+Structured error object with user-friendly message if the query failed, otherwise `null`.
+
+***
+
+<mark style="color:$success;">**rawError**</mark> `Error | null`
+
+The raw error from wagmi for debugging purposes. Use `error` for user-facing messages.
 
 ***
 

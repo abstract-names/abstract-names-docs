@@ -23,7 +23,7 @@ export default function Example() {
   });
 
   if (isLoading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error.message}</div>;
+  if (error) return <div>Error: {error.userMessage}</div>;
   if (!address) return <div>Name not found</div>;
 
   return <div>Address: {address}</div>;
@@ -53,7 +53,8 @@ Returns a `UseResolveResult` object.
 interface UseResolveResult {
   data: Address | undefined;
   isLoading: boolean;
-  error: Error | null;
+  error: AbstractNamesError | null;
+  rawError: Error | null;
   refetch: () => void;
 }
 ```
@@ -76,9 +77,24 @@ The resolved Ethereum address for the name. Returns `undefined` if the name is n
 
 ***
 
-<mark style="color:$success;">**error**</mark> `Error | null`
+<mark style="color:$success;">**error**</mark> `AbstractNamesError | null`
 
-The error object if the query failed, otherwise `null`.
+Structured error object with user-friendly message if the query failed, otherwise `null`.
+
+```typescript
+interface AbstractNamesError {
+  type: ErrorType;
+  message: string;        // Technical error message
+  userMessage: string;    // User-friendly message
+  details?: unknown;
+}
+```
+
+***
+
+<mark style="color:$success;">**rawError**</mark> `Error | null`
+
+The raw error from wagmi for debugging purposes. Use `error` for user-facing messages.
 
 ***
 

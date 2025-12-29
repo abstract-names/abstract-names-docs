@@ -25,7 +25,7 @@ export default function Example() {
   });
 
   if (isLoading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error.message}</div>;
+  if (error) return <div>Error: {error.userMessage}</div>;
   if (!name) return <div>No primary name set</div>;
 
   return <div>Name: {name}</div>;
@@ -55,7 +55,8 @@ Returns a `UseReverseResolveResult` object.
 interface UseReverseResolveResult {
   data: string | undefined;
   isLoading: boolean;
-  error: Error | null;
+  error: AbstractNamesError | null;
+  rawError: Error | null;
   refetch: () => void;
 }
 ```
@@ -78,9 +79,15 @@ The primary Abstract Name for the address (e.g., "vitalik.abs"). Returns `undefi
 
 ***
 
-<mark style="color:$success;">**error**</mark> `Error | null`
+<mark style="color:$success;">**error**</mark> `AbstractNamesError | null`
 
-The error object if the query failed, otherwise `null`.
+Structured error object with user-friendly message if the query failed, otherwise `null`.
+
+***
+
+<mark style="color:$success;">**rawError**</mark> `Error | null`
+
+The raw error from wagmi for debugging purposes. Use `error` for user-facing messages.
 
 ***
 

@@ -23,7 +23,7 @@ export default function Example() {
   });
 
   if (isLoading) return <div>Loading profile...</div>;
-  if (error) return <div>Error: {error.message}</div>;
+  if (error) return <div>Error: {error.userMessage}</div>;
   if (!profile) return <div>Profile not found</div>;
 
   const twitter = getTextRecord('com.x');
@@ -63,7 +63,8 @@ Returns a `UseProfileResult` object.
 interface UseProfileResult {
   data: NameProfile | undefined;
   isLoading: boolean;
-  error: Error | null;
+  error: AbstractNamesError | null;
+  rawError: Error | null;
   refetch: () => void;
   getTextRecord: (key: string) => string | undefined;
 }
@@ -102,9 +103,15 @@ interface NameProfile {
 
 ***
 
-<mark style="color:$success;">**error**</mark> `Error | null`
+<mark style="color:$success;">**error**</mark> `AbstractNamesError | null`
 
-The error object if the query failed, otherwise `null`.
+Structured error object with user-friendly message if the query failed, otherwise `null`.
+
+***
+
+<mark style="color:$success;">**rawError**</mark> `Error | null`
+
+The raw error from wagmi for debugging purposes. Use `error` for user-facing messages.
 
 ***
 

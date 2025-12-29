@@ -21,7 +21,7 @@ export default function Example() {
   const { data: allowedKeys, isLoading, error } = useAllowedTextKeys();
 
   if (isLoading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error.message}</div>;
+  if (error) return <div>Error: {error.userMessage}</div>;
   if (!allowedKeys) return <div>No keys available</div>;
 
   return (
@@ -52,7 +52,8 @@ Returns a `UseAllowedTextKeysResult` object.
 interface UseAllowedTextKeysResult {
   data: readonly string[] | undefined;
   isLoading: boolean;
-  error: Error | null;
+  error: AbstractNamesError | null;
+  rawError: Error | null;
   refetch: () => void;
 }
 ```
@@ -86,9 +87,15 @@ Array of allowed text record keys. Returns `undefined` if the query hasn't compl
 
 ***
 
-<mark style="color:$success;">**error**</mark> `Error | null`
+<mark style="color:$success;">**error**</mark> `AbstractNamesError | null`
 
-The error object if the query failed, otherwise `null`.
+Structured error object with user-friendly message if the query failed, otherwise `null`.
+
+***
+
+<mark style="color:$success;">**rawError**</mark> `Error | null`
+
+The raw error from wagmi for debugging purposes. Use `error` for user-facing messages.
 
 ***
 
